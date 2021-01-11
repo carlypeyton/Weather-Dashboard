@@ -27,8 +27,8 @@
                     <input class="form-control" type="text" id="city-search" />
                     <!-- Search button -->
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary bg-primary" type="button"
-                            id="search-button"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-outline-secondary bg-primary" type="button" id="search-button"><i
+                                class="fas fa-search"></i></button>
                     </div>
                 </div>
                 <!-- Search History -->
@@ -36,10 +36,10 @@
                 <button class=" btn btn-primary mt-2 mb-2" type="button" id="clear-button">Clear Search
                     History</button>
                 <!-- Unordered list to saved searched cities -->
-                <div class = "history-container">
-                <ul class="list-group search-history"></ul>
-                <li class="list-group-item"></li>
-            </div>
+                <div class="history-container">
+                    <ul class="list-group search-history"></ul>
+                    <li class="list-group-item"></li>
+                </div>
             </div>
             <!-- Current Weather Information -->
             <div class="col-md-8" id="current-weather">
@@ -60,6 +60,12 @@
                     </br>
                     <h3>5-Day Forecast:</h3>
                     <div class="row text-light">
+                        <div class="forecast col-md-2 mt-3 ml-4 mb-3 bg-primary rounded">
+                            <p id="forecast-date0"></p>
+                            <p id="forecast-image0"></p>
+                            <p>Temp: <span id="forecast-temperature0"></span></p>
+                            <p>Humidity: <span id="forecast-humidity0"></span></p>
+                        </div>
                         <div class="forecast col-md-2 mt-3 ml-4 mb-3 bg-primary rounded">
                             <p id="forecast-date1"></p>
                             <p id="forecast-image1"></p>
@@ -83,12 +89,6 @@
                             <p id="forecast-image4"></p>
                             <p>Temp: <span id="forecast-temperature4"></span></p>
                             <p>Humidity: <span id="forecast-humidity4"></span></p>
-                        </div>
-                        <div class="forecast col-md-2 mt-3 ml-4 mb-3 bg-primary rounded">
-                            <p id="forecast-date5"></p>
-                            <p id="forecast-image5"></p>
-                            <p>Temp: <span id="forecast-temperature5"></span></p>
-                            <p>Humidity: <span id="forecast-humidity5"></span></p>
                         </div>
                     </div>
                 </div>
