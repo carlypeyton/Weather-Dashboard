@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Weather Dashboard</title>
+    <!-- Font Awesome for Icons -->
+</head>
+
+<body>
+    <div class="jumbotron container-fluid text-white">
+        <h1>Weather Dashboard</h1>
+    </div>
+    <!-- User search for weather based on city name-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 bg-light search-section">
+                <h5 class="mt-1 mb-2">Search for City:</h5>
+                <!-- User input city text-->
+                <div class="input-group">
+                    <input class="form-control" type="text" id="city-search" />
+                    <!-- Search button -->
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-primary" type="button"
+                            id="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <!-- Search History -->
+                <!-- Clear search history button -->
+                <button class=" btn btn-primary mt-2 mb-2" type="button" id="clear-button">Clear Search
+                    History</button>
+                <!-- Unordered list to saved searched cities -->
+                <div class = "history-container">
+                <ul class="list-group search-history"></ul>
+                <li class="list-group-item"></li>
+            </div>
+            </div>
+            <!-- Current Weather Information -->
+            <div class="col-md-8" id="current-weather">
+                <div class="row ml-4 border border-dark rounded">
+                    <div class="col-md-12 mr-5">
+                        <!-- Display city name, temp, humidity, and wind speed-->
+                        <h3 class="city-name current-date mb-2 mt-3" id="city-name"></h3>
+                        <p>Temperature: <span class="current" id="temperature"></span></p>
+                        <p>Humidity: <span class="current" id="humidity"></span></p>
+                        <p>Wind Speed: <span class="current" id="wind-speed"></span></p>
+                        <p>UV Index: <span class="current" id="uv-index"></span></p>
+                    </div>
+                </div>
+                <!-- Create divs for 5 day forecast (from opeanweathermap.org), which will be -->
+                <!-- hidden until user searches for or selects city -->
+                <!-- Display date, weather image, temp, humidity, wind speed -->
+                <div class="col-md-12" id="forecast">
+                    </br>
+                    <h3>5-Day Forecast:</h3>
+                    <div class="row text-light">
+                        <div class="forecast col-md-2 mt-3 ml-4 mb-3 bg-primary rounded">
+                            <p id="forecast-date1"></p>
+                            <p id="forecast-image1"></p>
+                            <p>Temp: <span id="forecast-temperature1"></span></p>
+                            <p>Humidity: <span id="forecast-humidity1"></span></p>
+                        </div>
+                        <div class="forecast col-md-2 mt-3 ml-4 mb-3 bg-primary rounded">
+                            <p id="forecast-date2"></p>
+                            <p id="forecast-image2"></p>
+                            <p>Temp: <span id="forecast-temperature2"></span></p>
+                            <p>Humidity: <span id="forecast-humidity2"></span></p>
+                        </div>
+                        <div class="forecast col-md-2 mt-3 ml-4 mb-3 bg-primary rounded">
+                            <p id="forecast-date3"></p>
+                            <p id="forecast-image3"></p>
+                            <p>Temp: <span id="forecast-temperature3"></span></p>
+                            <p>Humidity: <span id="forecast-humidity3"></span></p>
+                        </div>
+                        <div class="forecast col-md-2 mt-3 ml-4 mb-3 bg-primary rounded">
+                            <p id="forecast-date4"></p>
+                            <p id="forecast-image4"></p>
+                            <p>Temp: <span id="forecast-temperature4"></span></p>
+                            <p>Humidity: <span id="forecast-humidity4"></span></p>
+                        </div>
+                        <div class="forecast col-md-2 mt-3 ml-4 mb-3 bg-primary rounded">
+                            <p id="forecast-date5"></p>
+                            <p id="forecast-image5"></p>
+                            <p>Temp: <span id="forecast-temperature5"></span></p>
+                            <p>Humidity: <span id="forecast-humidity5"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS, jQuery w/ AJAX and moment()-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
