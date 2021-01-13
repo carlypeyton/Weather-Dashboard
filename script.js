@@ -12,3 +12,11 @@ $(".history-container").hide();
 $("#forecast").hide();
 $("#current-weather").hide();
 $(".list-group-item").hide();
+
+//Enter key for searching as well as search button
+$("#city-search").keypress(function(event) { 
+    if (event.keyCode === 13) { 
+        // event.preventDefault();
+        $("#search-button").click(); 
+    } 
+});
