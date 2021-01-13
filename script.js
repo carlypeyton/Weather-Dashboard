@@ -105,6 +105,30 @@ searchButton.click(function () {
                     $("#uv-index").removeClass("low");
                 }
             });
+
+            // Variable for 5 day forecast 
+            let forecastWeatherAPI = "https://api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&Appid=" + APIKey + "&units=imperial";
+            //AJAX get request for forecast weather 
+            $.ajax({
+                url: forecastWeatherAPI,
+                method: "GET"
+            }).then(function (response) {
+                //For loop for 5 days
+                var i;
+                for (i = 0; i < 5; i++) {
+                    //Define variables for responses
+                    let date = new Date((response.list[((i + 1) * 8) - 1].dt) * 1000).toLocaleDateString();
+                    let iconcode = response.list[((i + 1) * 8) - 1].weather[0].icon;
+                    let iconurl = "https://openweathermap.org/img/wn/" + iconcode + ".png";
+                    let tempF = (response.list[((i + 1) * 8) - 1].main.temp).toFixed(1); var humidity = response.list[((i + 1) * 8) - 1].main.humidity;
+                    //Update HTML with date, forecast image, and weather
+                    $("#forecast-date" + i).html(date);
+                    $("#forecast-image" + i).html("<img src=" + iconurl + ">");
+                    $("#forecast-temperature" + i).html(tempF + "&#8457");
+                    $("#forecast-humidity" + i).html(humidity + "%");
+                }
+
+            });
         });
     }
 });
