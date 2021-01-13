@@ -70,15 +70,15 @@ ul {
 	background-color: green;
 	padding: 3px;
 	color: white;
-	border: 1px solid grey;
+	border: 1px solid rgb(10, 78, 1);
 	border-radius: 5px;
 }
 
 .medium {
-	background-color: rgb(236, 232, 0);
+	background-color: rgb(255, 251, 0);
 	padding: 3px;
-	color: white;
-	border: 1px solid grey;
+	color: grey;
+	border: 1px solid rgb(218, 207, 62);
 	border-radius: 5px;
 }
 
@@ -86,7 +86,7 @@ ul {
 	background-color: orange;
 	padding: 3px;
 	color: white;
-	border: 1px solid grey;
+	border: 1px solid rgb(209, 106, 37);
 	border-radius: 5px;
 }
 
@@ -94,6 +94,6 @@ ul {
 	background-color: red;
 	padding: 3px;
 	color: white;
-	border: 1px solid grey;
+	border: 1px solid rgb(155, 7, 7);
 	border-radius: 5px;
 }
