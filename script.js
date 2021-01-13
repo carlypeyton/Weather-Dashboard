@@ -70,6 +70,41 @@ searchButton.click(function () {
             console.log(response.main.temp);
             console.log(response.main.humidity);
             console.log(response.wind.speed);
+
+            // Variable for current weather UV index
+            let currentWeatherUV = `https://api.openweathermap.org/data/2.5/uvi?appid=b8ecb570e32c2e5042581abd004b71bb&lat=${response.coord.lat}&lon=${response.coord.lon}`;
+            //AJAX get request for current weather UV index
+            $.ajax({
+                url: currentWeatherUV,
+                method: "GET"
+            }).then(function (response) {
+                //Set value of UV index
+                $("#uv-index").empty();
+                $("#uv-index").text(response.value);
+                let uvindex = response.value;
+                //Change color of background on UV index based on scale
+                if (uvindex <= 3) {
+                    $("#uv-index").addClass("low");
+                    $("#uv-index").removeClass("medium");
+                    $("#uv-index").removeClass("high");
+                    $("#uv-index").removeClass("very-high");
+                } else if (uvindex >= 3 && uvindex <= 6) {
+                    $("#uv-index").addClass("medium");
+                    $("#uv-index").removeClass("low");
+                    $("#uv-index").removeClass("high");
+                    $("#uv-index").removeClass("very-high");
+                } else if (uvindex >= 6 && uvindex <= 8) {
+                    $("#uv-index").addClass("high");
+                    $("#uv-index").removeClass("medium");
+                    $("#uv-index").removeClass("low");
+                    $("#uv-index").removeClass("very-high");
+                } else {
+                    $("#uv-index").addClass("very-high");
+                    $("#uv-index").removeClass("medium");
+                    $("#uv-index").removeClass("high");
+                    $("#uv-index").removeClass("low");
+                }
+            });
         });
     }
 });
