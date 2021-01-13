@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    <div class="jumbotron container-fluid text-white">
+    <div class="jumbotron mb-0 container-fluid text-white">
         <h1>Weather Dashboard</h1>
     </div>
     <!-- User search for weather based on city name-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3 bg-light search-section">
-                <h5 class="mt-1 mb-2">Search for City:</h5>
+                <h5>Search for City:</h5>
                 <!-- User input city text-->
                 <div class="input-group">
                     <input class="form-control" type="text" id="city-search" />
@@ -43,8 +43,8 @@
                 </div>
             </div>
             <!-- Current Weather Information -->
-            <div class="col-md-8" id="current-weather">
-                <div class="row ml-4 border border-dark rounded">
+            <div class="col-md-8 mt-3" id="current-weather">
+                <div class="row ml-4 pb-2 border border-dark rounded">
                     <div class="col-md-12 mr-5">
                         <!-- Display city name, temp, humidity, and wind speed-->
                         <h3 class="city-name current-date mb-2 mt-3" id="city-name"></h3>
@@ -59,7 +59,7 @@
                 <!-- Display date, weather image, temp, humidity -->
                 <div class="col-md-12" id="forecast">
                     </br>
-                    <h3>5-Day Forecast</h3>
+                    <h3 class ="ml-2">5-Day Forecast</h3>
                     <div class="row text-light">
                         <div class="forecast col-md-2 mt-3 ml-4 mb-3 bg-primary rounded">
                             <p id="forecast-date0"></p>

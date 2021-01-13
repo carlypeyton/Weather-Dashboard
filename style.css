@@ -4,14 +4,19 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-bottom: 2px solid whitesmoke;
+	margin-bottom: 0rem;
 }
 
+/* Remove bullets from search history */
 ul {
     list-style-type: none;
 }
 
+
+
+/* Current Weather icon */
 #current-weather-icon {
-	max-height: 80px;
+	width: 80px;
 }
 
 .bg-default {
@@ -21,11 +26,16 @@ ul {
 .search-section {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background-color: #f5f6fa;
+	background-color: #9497a0;
+	height: 500px;
+}
+
+.form-control {
+	width: 80px;
 }
 
 /* Style Forecast Section */
-#forecast {
+.forecast {
 	text-align: center;
 }
 #forecast-date0 {
@@ -43,6 +53,7 @@ ul {
 #forecast-date4 {
 	margin-top: 3px;
 }
+
 
 /*Classes for UV index coloring*/
 .low {
