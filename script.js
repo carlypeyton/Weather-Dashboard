@@ -16,7 +16,6 @@ $(".list-group-item").hide();
 //Enter key for searching as well as search button
 $("#city-search").keypress(function (event) {
     if (event.keyCode === 13) {
-        // event.preventDefault();
         $("#search-button").click();
     }
 });
@@ -48,10 +47,9 @@ searchButton.click(function () {
             //Add class to list group and prepend list item with list-group-items for each city
             let searchHistory = $(".list-group").addClass("list-group-item");
             searchHistory.prepend("<button type='button' class='list-group-item list-group-item-action city-button'>" + response.name + "</button>");
-            localStorage.setItem(searchNumber, response.name);
+            localStorage.setItem('user-search', response.name);
             //Clear searched term from input field
             $("#city-search").val('');
-            searchNumber = searchNumber + 1;
             //Current Weather
             //Convert temperature to fahrenheit, fix to 1 decimal place
             let tempF = (response.main.temp).toFixed(1);
@@ -124,10 +122,9 @@ searchButton.click(function () {
                     //Update HTML with date, forecast image, and weather
                     $("#forecast-date" + i).html(date);
                     $("#forecast-image" + i).html("<img src=" + iconurl + ">");
-                    $("#forecast-temperature" + i).html(tempF + "&#8457");
+                    $("#forecast-temperature" + i).html(tempF + " °F");
                     $("#forecast-humidity" + i).html(humidity + "%");
                 }
-
             });
         });
     }
@@ -149,7 +146,8 @@ clearButton.click(function () {
 ////////////////////////FROM HERE BELOW TO GO////////////////////////////
 
 //Function to load last city searched for
-// function loadLastCity() {}
+function loadLastCity() {
+}
 
 
 
