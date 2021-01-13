@@ -132,3 +132,35 @@ searchButton.click(function () {
         });
     }
 });
+
+//Function for clear search history button click event
+clearButton.click(function () {
+    let searchHistory = $(".list-group-item");
+    $(".search-history").empty();
+    $(".history-container").hide();
+    localStorage.removeItem(searchHistory);
+});
+
+
+
+
+
+
+////////////////////////FROM HERE BELOW TO GO////////////////////////////
+
+//Function to load last city searched for
+// function loadLastCity() {}
+
+
+
+//Function for user to search weather for item in search history
+// cityButton.click(function() {
+// });
+
+
+/////////////////////////RUN TIME/////////////////////////////////////////
+
+//When window loads show last searched city
+// $(window).on("load", loadLastCity) 
+
+
