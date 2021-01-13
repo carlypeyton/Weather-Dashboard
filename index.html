@@ -11,6 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Weather Dashboard</title>
     <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -27,8 +28,8 @@
                     <input class="form-control" type="text" id="city-search" />
                     <!-- Search button -->
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary bg-primary" type="button" id="search-button"><i
-                                class="fas fa-search"></i></button>
+                        <button class="btn btn-outline-secondary bg-primary" type="button" id="search-button">
+                            <i class="fas fa-search"></i></button>
                     </div>
                 </div>
                 <!-- Search History -->
@@ -58,7 +59,7 @@
                 <!-- Display date, weather image, temp, humidity -->
                 <div class="col-md-12" id="forecast">
                     </br>
-                    <h3>5-Day Forecast:</h3>
+                    <h3>5-Day Forecast</h3>
                     <div class="row text-light">
                         <div class="forecast col-md-2 mt-3 ml-4 mb-3 bg-primary rounded">
                             <p id="forecast-date0"></p>
