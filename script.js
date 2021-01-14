@@ -225,6 +225,7 @@ clearButton.click(function () {
 ////////////////////////FROM HERE BELOW TO GO////////////////////////////
 
 //Function to load last city searched for weather and forecast
+//Need to hide containers unless local storage !== NULL
 window.onload = function loadLastCity() {
     let lastCity = localStorage.getItem('user-search');
     //Show hidden containers
@@ -305,5 +306,4 @@ window.onload = function loadLastCity() {
             }
         });
     });
-}
-
+} 
