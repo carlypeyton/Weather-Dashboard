@@ -1,3 +1,6 @@
+//Figure out how, when loading page for very first time, 
+//to hide containers if nothing in local storage
+
 //Define variables, set Jquery for search button, and API key for Open Weather API
 let searchButton = $("#search-button");
 let clearButton = $("#clear-button");
@@ -221,14 +224,13 @@ clearButton.click(function () {
 
 ////////////////////////FROM HERE BELOW TO GO////////////////////////////
 
-//Function to load last city searched for
-
+//Function to load last city searched for weather and forecast
 window.onload = function loadLastCity() {
-     //Show hidden containers
-     $(".history-container").show();
-     $("#forecast").show();
-     $("#current-weather").show();
     let lastCity = localStorage.getItem('user-search');
+    //Show hidden containers
+    $(".history-container").show();
+    $("#forecast").show();
+    $("#current-weather").show();
     console.log(lastCity);
     let lastCityAPI = "https://api.openweathermap.org/data/2.5/weather?q=" + lastCity + "&Appid=" + APIKey + "&units=imperial";
     $.ajax({
@@ -304,5 +306,4 @@ window.onload = function loadLastCity() {
         });
     });
 }
-
 
