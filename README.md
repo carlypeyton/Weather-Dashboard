@@ -1,7 +1,7 @@
 # Weather-Dashboard
 
-Link to Github Repository:
-Link to Deployed Application:
+Link to Github Repository: https://github.com/carlypeyton/Weather-Dashboard
+Link to Deployed Application: https://carlypeyton.github.io/Weather-Dashboard/
 
 ## User Story
 
@@ -28,3 +28,12 @@ THEN I am again presented with current and future conditions for that city
 WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 ```
+
+Upon loading page, last searched city weather and forecast is displayed:
+<img src = "Screenshots/Screen Shot 2021-01-14 at 11.10.41 AM.png">
+As I search for cities, they are added to my search history on the left side of the page, and the current weather/forecast is displayed for searched city:
+<img src = "Screenshots/Screen Shot 2021-01-14 at 11.11.07 AM.png">
+When I select a city from my search history list, the current weather and forecast is displayed for that city:
+<img src = "Screenshots/Screen Shot 2021-01-14 at 11.11.18 AM.png">
+When I select the Clear Search History button, the search history list is emptied: 
+<img src = "Screenshots/Screen Shot 2021-01-14 at 11.11.29 AM.png">
