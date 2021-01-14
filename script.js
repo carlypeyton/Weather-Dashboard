@@ -306,7 +306,3 @@ window.onload = function loadLastCity() {
 }
 
 
-/////////////////////////RUN TIME/////////////////////////////////////////
-
-//When window loads show last searched city
-
