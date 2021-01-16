@@ -26,6 +26,7 @@ ul {
 	padding-bottom: 30px;
 	background-color: #9497a0;
 	height: auto;
+	margin-bottom: 0;
 }
 
 /*Media query to adjust margins for smaller screen sizes*/
