@@ -29,6 +29,16 @@ WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 ```
 
+## Technologies
+-JavaScript
+-HTML
+-CSS
+-jQuery
+-Bootstrap
+-AJAX
+-FontAwesome
+-Moment.js
+
 Upon loading page, last searched city weather and forecast is displayed:
 <img src = "Screenshots/Screen Shot 2021-01-14 at 11.10.41 AM.png">
 As I search for cities, they are added to my search history on the left side of the page, and the current weather/forecast is displayed for searched city:
@@ -38,6 +48,6 @@ When I select a city from my search history list, the current weather and foreca
 When I select the Clear Search History button, the search history list is emptied: 
 <img src = "Screenshots/Screen Shot 2021-01-14 at 11.11.29 AM.png">
 
-This application was created using the Open Weather Map API. In this application, when the user navigates the the page, they may input a city name. When the user either clicks the search button, or hits enter on their keyboard, the city name, the current date, the weather icon, and the current weather, including temperature, humidity, windspeed and UV index are displayed. A 5-day forecast for that city is also displayed, including date, weather icon, temperature and humidity. To develop this application, I utilized Bootstrap, jQuery, AJAX, Font Awesome, and Moment.js. 
+This application was created using the Open Weather Map API. In this application, when the user navigates the the page, they may input a city name. When the user either clicks the search button, or hits enter on their keyboard, the city name, the current date, the weather icon, and the current weather, including temperature, humidity, windspeed and UV index are displayed. A 5-day forecast for that city is also displayed, including date, weather icon, temperature and humidity. 
 
 Areas for improvement include generally cleaning up the code to eliminate any repeated code, and to further stylize the page. 
