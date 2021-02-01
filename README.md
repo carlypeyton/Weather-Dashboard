@@ -3,10 +3,6 @@
 Link to Github Repository: https://github.com/carlypeyton/Weather-Dashboard
 Link to Deployed Application: https://carlypeyton.github.io/Weather-Dashboard/
 
-This application was created using the Open Weather Map API. In this application, when the user navigates the the page, they may input a city name. When the user either clicks the search button, or hits enter on their keyboard, the city name, the current date, the weather icon, and the current weather, including temperature, humidity, windspeed and UV index are displayed. A 5-day forecast for that city is also displayed, including date, weather icon, temperature and humidity. To develop this application, I utilized Bootstrap, jQuery, AJAX, Font Awesome, and Moment.js. 
-
-Areas for improvement include generally cleaning up the code to eliminate any repeated code, and to further stylize the page. 
-
 ## User Story
 
 ```
@@ -42,3 +38,6 @@ When I select a city from my search history list, the current weather and foreca
 When I select the Clear Search History button, the search history list is emptied: 
 <img src = "Screenshots/Screen Shot 2021-01-14 at 11.11.29 AM.png">
 
+This application was created using the Open Weather Map API. In this application, when the user navigates the the page, they may input a city name. When the user either clicks the search button, or hits enter on their keyboard, the city name, the current date, the weather icon, and the current weather, including temperature, humidity, windspeed and UV index are displayed. A 5-day forecast for that city is also displayed, including date, weather icon, temperature and humidity. To develop this application, I utilized Bootstrap, jQuery, AJAX, Font Awesome, and Moment.js. 
+
+Areas for improvement include generally cleaning up the code to eliminate any repeated code, and to further stylize the page. 
