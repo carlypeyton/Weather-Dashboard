@@ -1,9 +1,10 @@
 # Weather-Dashboard
 
-* Link to Github Repository: https://github.com/carlypeyton/Weather-Dashboard
-* Link to Deployed Application: https://carlypeyton.github.io/Weather-Dashboard/
+## Project Description 
 
-## User Story
+This application was created using the Open Weather Map API. In this application, when the user navigates the the page, they may input a city name. When the user either clicks the search button, or hits enter on their keyboard, the city name, the current date, the weather icon, and the current weather, including temperature, humidity, windspeed and UV index are displayed. A 5-day forecast for that city is also displayed, including date, weather icon, temperature and humidity. 
+
+### User Story
 
 ```
 AS A traveler
@@ -11,7 +12,7 @@ I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 ```
 GIVEN a weather dashboard with form inputs
@@ -29,6 +30,11 @@ WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 ```
 
+##  Deployed Application
+
+* Link to Github Repository: https://github.com/carlypeyton/Weather-Dashboard
+* Link to Deployed Application: https://carlypeyton.github.io/Weather-Dashboard/
+
 ## Technologies Used
 -JavaScript
 -HTML
@@ -39,6 +45,7 @@ THEN I am presented with the last searched city forecast
 -FontAwesome
 -Moment.js
 
+## Application Walkthrough
 Upon loading page, last searched city weather and forecast is displayed:
 <img src = "Screenshots/Screen Shot 2021-01-14 at 11.10.41 AM.png">
 As I search for cities, they are added to my search history on the left side of the page, and the current weather/forecast is displayed for searched city:
@@ -48,6 +55,6 @@ When I select a city from my search history list, the current weather and foreca
 When I select the Clear Search History button, the search history list is emptied: 
 <img src = "Screenshots/Screen Shot 2021-01-14 at 11.11.29 AM.png">
 
-This application was created using the Open Weather Map API. In this application, when the user navigates the the page, they may input a city name. When the user either clicks the search button, or hits enter on their keyboard, the city name, the current date, the weather icon, and the current weather, including temperature, humidity, windspeed and UV index are displayed. A 5-day forecast for that city is also displayed, including date, weather icon, temperature and humidity. 
+
 
 
